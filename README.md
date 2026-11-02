@@ -41,7 +41,7 @@ The following scenarios passed in actual Interactive Preview using native LEAF. 
 - `foldspace-finish-restart`
 - `foldspace-ik-reach`
 
-To rerun a focused scenario, reset Preview, select it in the LEAF panel, run it, and inspect the Logger result. Run scenarios serially from a fresh Preview state. The optional `foldspace-demo-tour` and `foldspace-capture-start` are recording helpers, not additional assertions-based passes.
+To rerun a focused scenario, reset Preview, select it in the LEAF panel, run it, and inspect the Logger result. Run scenarios serially from a fresh Preview state. For `foldspace-ik-reach`, set `__leaf__diagnostic_policy` to `fail-fast`: this checks actual IK reach to Confirm placement instead of allowing the default diagnostic fallback to simulate reach. The recorded passing run used `fail-fast`. The optional `foldspace-demo-tour` and `foldspace-capture-start` are recording helpers, not additional assertions-based passes.
 
 Geometry checks sampled all five stages: material area remained **623.7 cm²**, and the flat runtime mesh measured **21 × 29.7 cm**. Native screenshots show distinct fold poses and room-relative parallax after moving the Preview camera. Details, limitations and test evidence are in [the build report](devpost/build-report.md); captures are in [devpost/qa](devpost/qa).
 
