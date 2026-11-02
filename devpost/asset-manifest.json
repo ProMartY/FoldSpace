@@ -1,0 +1,9 @@
+{
+  "tier":"interactive",
+  "theme":{"style":"clean, geometric, naturalistic","palette":"paper white, cyan, amber, slate blue","mood":"calm, instructional"},
+  "meshes":[{"name":"FoldSpacePaperMesh","backend":"code-authored MeshBuilder","backend_reason":"animated/articulated A4 folds require exact hinges and preserved material layers","target_size_cm":[21,0.04,29.7],"animate":"yes"}],
+  "sfx":["FoldSpaceClick.wav","FoldSpacePaper.wav","FoldSpaceFlight.wav"],
+  "icons":["arrow_forward.png","replay.png","arrow_back.png","restart_alt.png","check.png","open_with.png"],
+  "ui_modules":[{"name":"FoldSpaceLessonUI.ts","elements":[{"name":"instruction","container":"backplate","labels":["FOLDSPACE","VIRTUAL WORKSPACE · A4 21 × 29.7 cm","Step 5 / 5 · Wings","Fold each wing down, then open both wings.","Manual progress · no fold detection"],"exposes":["setLesson","setPlacement"]},{"name":"actions","container":"backplate","labels":["Confirm placement","Drag workspace","Next","Replay","Back","Reset","Finish","Complete · ready to make another"],"emits":["onConfirm","onNext","onReplay","onBack","onReset"]}]}],
+  "spatial_layout":"Workspace root (0,-20,-105) cm; identity rotation and unit scale. Paper slot at local(0,0,0), flat XZ A4 21×29.7cm with nose toward -Z. Instruction panel local(0,22,0), 42×12cm; far above paper. Controls local(0,-12,18), 38×14cm; near edge, below paper. Virtual work-surface outline 29×37cm at localY=-0.5; paper on surface. All children move with workspace before confirmation; root remains world-fixed after lock. Flight visual travels -Z and +Y within a short 45cm flourish."
+}

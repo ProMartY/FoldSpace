@@ -1,0 +1,71 @@
+- !<AssetImportMetadata/0c327fa2-e5f5-4046-9b1d-d773a5e9d8e0>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 40b490d8-9995-4fb5-8d6e-6e80ff3486e0
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 40b490d8-9995-4fb5-8d6e-6e80ff3486e0
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> bef1ecd9-77b6-4a8d-91cc-de6d0eaf9bb7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/bef1ecd9-77b6-4a8d-91cc-de6d0eaf9bb7>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 4b490e2b-ad71-4676-bef5-05079307a600
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugColliders: false
+    foldDuration: false
+    paper: false
+    paperRoot: false
+    placementFar: false
+    placementNear: false
+    placementTop: false
+    sfxVolume: false
+    ui: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ui: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      paper: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      paperRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      foldDuration: 2.600000
+      sfxVolume: 0.320000
+      debugColliders: false
+      placementNear: !<float> 95.000000
+      placementFar: !<float> 130.000000
+      placementTop: !<float> -10.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"FoldSpace · lesson controller"}'
+    - '// @input AssignableType_1 ui {"hint":"Passive UIKit lesson view"}'
+    - '// @input AssignableType_2 paper {"hint":"Articulated paper mesh"}'
+    - '// @input SceneObject paperRoot {"hint":"Authored visual leaf for flight animation"}'
+    - '// @input float foldDuration = 2.6 {"hint":"Fold demonstration duration in seconds", "widget":"slider", "min":1.5, "max":5, "step":0.1}'
+    - '// @input float sfxVolume = 0.32 {"hint":"Input and paper cue volume", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input bool debugColliders {"hint":"Draw all collider hit areas after initialization"}'
+    - '// @input float placementNear = 95 {"hint":"Closest placement distance from the initial room origin, cm", "widget":"slider", "min":85, "max":110, "step":1}'
+    - '// @input float placementFar = 130 {"hint":"Farthest placement distance from the initial room origin, cm", "widget":"slider", "min":110, "max":160, "step":1}'
+    - '// @input float placementTop = -10 {"hint":"Highest workspace position below the initial eye origin, cm", "widget":"slider", "min":-40, "max":-5, "step":1}'

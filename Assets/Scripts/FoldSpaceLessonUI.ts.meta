@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/95607fa1-9b07-496b-96a6-b87b8c49b387>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3df470cf-1ab3-4f52-a215-34919e2e145a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3df470cf-1ab3-4f52-a215-34919e2e145a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d6a55f15-ab4f-4267-8050-36d2f507d280
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d6a55f15-ab4f-4267-8050-36d2f507d280>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 76f994ca-ebd4-4bd9-9621-a7cf3384bf12
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    actionRoot: false
+    instructionRoot: false
+    panelWidth: false
+    textScale: false
+    workspace: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - workspace: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      instructionRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      actionRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      panelWidth: !<float> 42.000000
+      textScale: 1.200000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"FoldSpace · lesson view"}'
+    - '// @input SceneObject workspace {"hint":"Authored workspace root moved by the placement handle"}'
+    - '// @input SceneObject instructionRoot {"hint":"Authored instruction panel anchor"}'
+    - '// @input SceneObject actionRoot {"hint":"Authored action panel anchor"}'
+    - '// @input float panelWidth = 42 {"hint":"Main panel width in cm", "widget":"slider", "min":34, "max":48, "step":1}'
+    - '// @input float textScale = 1.2 {"hint":"Global type-scale correction", "widget":"slider", "min":0.8, "max":1.5, "step":0.05}'

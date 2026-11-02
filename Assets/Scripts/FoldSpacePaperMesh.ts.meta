@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/3e1e1b1d-6f61-443d-8f25-b992446d0d99>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> dee27427-8d4b-4c14-b310-250e2dd8e1f6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> dee27427-8d4b-4c14-b310-250e2dd8e1f6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ec4bafa7-bf92-4d5b-b9fd-1422d2525a83
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ec4bafa7-bf92-4d5b-b9fd-1422d2525a83>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 49df1149-9109-41ce-bba3-7ce204aa91da
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    creaseColor: false
+    edgeColor: false
+    material: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      creaseColor: !<Vec4> {x: 0.030000, y: 0.900000, z: 1.000000, w: 1.000000}
+      edgeColor: !<Vec4> {x: 1.000000, y: 0.630000, z: 0.160000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"FoldSpace · articulated A4 paper"}'
+    - '// @input Asset.Material material {"hint":"Imported SimpleVertexBaseColor material"}'
+    - '// @input vec4 creaseColor = "{0.03,0.9,1,1}" {"hint":"Current crease color", "widget":"color"}'
+    - '// @input vec4 edgeColor = "{1,0.63,0.16,1}" {"hint":"Moving edge and direction arrow color", "widget":"color"}'
